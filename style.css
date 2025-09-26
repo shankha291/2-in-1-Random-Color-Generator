@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    background-image: url(grad.jpg);
+    background-size: cover;
+    font-family: "roboto";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    min-height: 100vh;
+    padding: 20px;
+}
+.container{
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 2em;
+
+    width: 90%;
+    max-width: 600px;
+    
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 0.5em;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+h1::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width:80%;
+    height: 3px;
+    background-image: linear-gradient(to right,blue,purple,rgb(207, 102, 207));
+    border-radius: 2px;
+    
+}
+button{
+    cursor: pointer;
+}
+.copy-btn{
+  cursor: pointer;
+}
+#genbtn{
+    margin-bottom: 1.5rem;
+    background-color: #B983FF;
+    border:none;
+    padding: 0.8rem 1.5rem;
+    cursor: pointer;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+#genbtn:hover{
+    transform: translateY(-2px);
+}
+.palbox{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(100px,1fr));
+    gap: 10px;
+}
+.colbox{
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #B983FF;
+    transition: transform 0.2s;
+    
+}
+.colbox:hover{
+    transform:translateY(-5px);
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .9rem;
+    padding: 8px;
+    background-color: wheat;
+
+}
+.colname{
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    
+}
+
+.color{
+    background-color: aqua;
+    height: 100px;
+}
+
+#backbtn{
+    margin-top: 15px;
+    margin-bottom: 2rem;
+    background-color:wheat;
+    border:none;
+    padding: 0.8rem 1.5rem;
+    cursor: pointer;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+@media(width<1080px)
+{
+    .palbox{
+        display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+    gap: 8px;
+    }
+}

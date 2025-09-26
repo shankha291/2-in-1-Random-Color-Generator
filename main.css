@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    bottom: 0;
+    box-sizing: border-box;
+}
+body{
+     background-image: url(grad.jpg);
+    background-size: cover;
+    
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "roboto";
+    display: flex;
+    flex-direction: column;
+    
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+.container{
+    width: 90%;
+    max-width: 500px;
+    
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    font-size: 1.2rem;
+
+}
+
+.box{
+     overflow: hidden;
+    border-radius: 10px;
+    background-color: wheat;
+    transition: transform 0.2s;
+}
+.colorbox{
+    
+    color: black;
+    font-weight: 600;
+    transition: transform 0.5s;
+}
+#box2{
+    background-image: linear-gradient(to bottom,#F8838F,#B86200) 
+    
+    
+}
+.colorbox:hover{
+    transform: translateY(-4px);
+}
+ a{
+    list-style: none;
+    text-decoration: none;
+    cursor: default;
+}
+
+.colorbox {
+  background-color:#B983FF;
+  width: 70%;
+  height: 80px;
+  font-size: 1.4rem;
+  position: relative;
+  margin: 20px auto;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 8px;
+  
+}
+
+#mainheading {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff8dc;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4); 
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+    text-align: center;
+   
+}
+#mainheading::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 4px;
+    background-color: black;
+    border-radius: 2px;
+}
+
+button{
+    cursor: pointer;
+}
+
+
+
+#heading {
+    font-size: 2rem;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+
+}
+
+
+h1{
+    text-align: center;
+    margin-bottom: 25px;
+    position: relative;
+
+}
+#heading::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width:80%;
+    height: 3px;
+    background-image: linear-gradient(to right,blue,purple,rgb(207, 102, 207));
+    border-radius: 2px;
+    bottom: -5px;
+    
+}
+
+
+
+
+@media (max-width: 1080px) {
+ html{
+    font-size: 0.8rem;
+ }
+}
+

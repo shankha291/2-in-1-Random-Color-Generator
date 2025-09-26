@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    bottom: 0;
+    box-sizing: border-box;
+}
+body{
+     
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "roboto";
+    display: flex;
+    flex-direction: column;
+   
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+button{
+  cursor: pointer;
+}
+.copy-btn{
+  cursor: pointer;
+}
+.container{
+    width: 90%;
+    max-width: 500px;
+    
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+
+}
+h1{
+  position: relative;
+}
+h1::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width:80%;
+    height: 3px;
+    background-image: linear-gradient(to right,blue,purple,rgb(207, 102, 207));
+    border-radius: 2px;
+    bottom: -5px;
+    
+}
+#btn{
+     margin-bottom: 1rem;
+     margin-top: 1em;
+    background-color: #B983FF;
+    border:none;
+    padding: 0.6rem;
+    cursor: pointer;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.colorcontainer{
+      display: grid;
+    grid-template-columns: repeat(2,minmax(100px,1fr));
+    gap: 10px;
+}
+.box{
+     overflow: hidden;
+    border-radius: 10px;
+    background-color: wheat;
+    transition: transform 0.2s;
+    
+}
+.box:hover {
+  transform: translatey(-5px);
+}
+#btn:hover{
+    transform: translatey(-1px);
+}
+.color{
+height: 90px;
+}
+.colinfo{
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+
+}
+.lowerbox {
+  background-color:#B983FF;
+  width: 100%;
+  height: 60px;
+  position: relative;
+  margin: 20px auto;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+#backbtn{
+    margin-top: 15px;
+    margin-bottom: 2rem;
+    background-color:wheat ;
+    border:none;
+    padding: 0.8rem 1.5rem;
+    cursor: pointer;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+
+
+
+@media (max-width: 1080px) {
+  .colorcontainer {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+}
+
